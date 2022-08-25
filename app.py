@@ -43,7 +43,6 @@ def delete_drinks(id):
         return {"error": "not found"}
     db.session.delete(drink)  
     db.session.commit() 
-    succ = "Deleted"
     return {"success": True}
 if __name__ == '__main__':
     app.run(debug=True)
